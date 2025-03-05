@@ -55,6 +55,7 @@ jobs:
             --client-id "$($info.clientId)" `
             --client-secret "$($info.clientSecret)" `
             --tenant-id "$($info.tenantId)"
+            --debug
         shell: pwsh
         env:
           AZURE_CREDENTIALS: ${{ secrets.AZURE_CREDENTIALS }}
